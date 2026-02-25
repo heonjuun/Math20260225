@@ -22,7 +22,7 @@ int main()
 		sum += Array[i];
 	}
 	cout << sum;
-	return 0;
+	//clone
 	return 0;
 
 }
