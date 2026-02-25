@@ -14,5 +14,6 @@ int main()
 	cout << "°ö¼À:" << Number1 * Number2 << endl;
 	cout << "¸ò:" << Number1 / Number2 << endl;
 	cout << "³ª¸ÓÁö:" << Number1 % Number2 << endl;
+	return 0;
 
 }
