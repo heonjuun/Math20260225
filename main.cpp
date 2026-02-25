@@ -5,12 +5,14 @@ int main()
 {
 	int Number1 = 0;
 	int Number2 = 0;
+	cout << "Ã¹¹øÂ° Á¤¼öÀÔ·Â:";
 	cin >> Number1;
+	cout << "µÎ¹øÂ° Á¤¼öÀÔ·Â:";
 	cin >> Number2;
-	cout << Number1 + Number2 << endl;
-	cout << Number1 - Number2 << endl;
-	cout << Number1 * Number2 << endl;
-	cout << Number1 / Number2 << endl;
-	cout << Number1 % Number2 << endl;
+	cout << "µ¡¼À:" << Number1 + Number2 << endl;
+	cout << "»¬¼À:" << Number1 - Number2 << endl;
+	cout << "°ö¼À:" << Number1 * Number2 << endl;
+	cout << "¸ò:" << Number1 / Number2 << endl;
+	cout << "³ª¸ÓÁö:" << Number1 % Number2 << endl;
 
 }
