@@ -1,9 +1,11 @@
 #include<iostream>
 #include<conio.h>
+#include<ctime>
 using namespace std;
 
 int main()
 {
+	srand(time(NULL));
 	int Map[10][10] =
 	{
 		{1,1,1,1,1,1,1,1,1,1},
@@ -19,7 +21,8 @@ int main()
 	};
 	int PlayerX = 1;
 	int PlayerY = 1;
-	int clear = 0;
+	int Score = 0;
+
 	
 
 
@@ -29,8 +32,7 @@ int main()
 	{		
 		//이동값을 미리 입력받을 임시 변수생성
 		int nextX = PlayerX;
-		int nextY = PlayerY;
-		int star = rand() % 10;
+		int nextY = PlayerY;		
 		int temp;
 		temp = _getch();
 		//프로세스 처리
@@ -55,6 +57,12 @@ int main()
 		{ 
 			PlayerX = nextX; //1이 아닌 경우에 이동한 x축과 y축을 플레이어 좌표에 값 저장
 			PlayerY = nextY;
+			if (Map[PlayerY][PlayerX] == 9)
+			{
+				system("cls");
+				cout << "clear!" << endl;
+				break;   
+			}
 		}
 
 
@@ -83,10 +91,7 @@ int main()
 				{
 					cout << " ";
 				}
-				if (PlayerY==9 && PlayerX == 9)
-				{
-					break;
-				}
+			
 
 				
 				
